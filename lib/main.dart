@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'helper.dart';
 
 void main() {
   runApp(const MainApp());
@@ -26,32 +28,52 @@ class LayoutPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Personal Card'),
       ),
-      body: const Align(
-        alignment: Alignment.bottomCenter,
+      body: Align(
+        alignment: Alignment.center,
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(
-                image: AssetImage('images/profile pic.png'),
-                width: 200.0,
+              const CircleAvatar(
+                backgroundImage: AssetImage('images/profile pic.png'),
+                radius: 90.0,
               ),
-              SizedBox(height: 16.0),
-              Text(
-                'Djordje Dimitrov',
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
+              const SizedBox(height: 20.0),
+              Padding(
+                padding: const EdgeInsets.only(top: 15.0),
+                child: Text(
+                  'Djordje Dimitrov',
+                  style: GoogleFonts.sacramento(
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-              SizedBox(height: 16.0),
-              Card(
-                child: Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Column(
-                    children: [Text('E-mail'), Text('Phone'), Text('Web:')],
+              Padding(
+                padding: const EdgeInsets.only(top: 60.0),
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  color: const Color.fromARGB(255, 189, 227, 245),
+                  child: Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 4, vertical: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        buildIconRow(
+                            Icons.school, 'Student at Linneuniversitetet.',
+                            isBold: true),
+                        buildIconRow(
+                            Icons.email, 'Email: dd222im@student.lnu.se'),
+                        buildIconRow(Icons.phone, 'Phone: 0769980908'),
+                        buildIconRow(Icons.web, 'Web: https://lnu.se'),
+                        buildIconRow(Icons.code, 'Github: djolodjolo23')
+                      ],
+                    ),
                   ),
                 ),
               ),
