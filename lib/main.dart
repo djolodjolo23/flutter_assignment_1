@@ -31,7 +31,7 @@ class LayoutPage extends StatelessWidget {
       body: Align(
         alignment: Alignment.center,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,22 +45,22 @@ class LayoutPage extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 15.0),
                 child: Text(
                   'Djordje Dimitrov',
-                  style: GoogleFonts.sacramento(
+                  style: GoogleFonts.dancingScript(
                     fontSize: 30.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 60.0),
+                padding: const EdgeInsets.only(top: 10.0),
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
                   ),
                   color: const Color.fromARGB(255, 189, 227, 245),
                   child: Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 4, vertical: 20),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 10, vertical: 15),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
