@@ -37,8 +37,8 @@ class LayoutPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const CircleAvatar(
-                backgroundImage: AssetImage('images/profile pic.png'),
-                radius: 90.0,
+                backgroundImage: AssetImage('images/pp.jpg'),
+                radius: 95.0,
               ),
               const SizedBox(height: 20.0),
               Padding(
@@ -52,7 +52,7 @@ class LayoutPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10.0),
+                padding: const EdgeInsets.only(top: 50.0),
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),

@@ -9,7 +9,7 @@ environment:
 flutter:
   uses-material-design: true
   assets:
-    - images/profile pic.png
+    - images/pp.jpg
 
 dependencies:
   flutter:
