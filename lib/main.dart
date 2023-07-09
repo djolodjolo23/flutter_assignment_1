@@ -52,7 +52,7 @@ class LayoutPage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 50.0),
+                padding: const EdgeInsets.only(top: 30.0),
                 child: Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -60,7 +60,7 @@ class LayoutPage extends StatelessWidget {
                   color: const Color.fromARGB(255, 189, 227, 245),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 15),
+                        horizontal: 20, vertical: 15),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
